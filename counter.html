@@ -6,11 +6,19 @@
 
 <script>
   $( document ).ready( () => {
+
     let counter = 0;
     setInterval( () => {
       counter += 1;
       $('.count').html(counter);      
     }, 1000);
+
+    $('#datebutton').click( () => {
+      $.getJSON('/api/date', (data) => {
+        $('#date').html(data.now);
+      });
+    });
+
   });
 </script>
 
@@ -19,6 +27,9 @@
         <h3>Ed's in the house</h3>
         <h3 class="count"> <h3>
     </div>
+
+   <button id="datebutton"> Fetch Date </button>
+   <div id="date"> </div>
 </body>
 
 </html>

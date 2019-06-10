@@ -12,6 +12,10 @@ app.get('/counter', (req, res) => {
     res.sendFile(file);
 });
 
+app.get('/api/date', (req, res) => {
+    res.json({ now : (new Date()).toISOString() });
+});
+
 app.listen(8080, () => {
     console.log("Listening on http://localhost:8080");
 });
