@@ -1,0 +1,25 @@
+{
+  "name": "nodetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc *.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davebeyer/node-test.git"
+  },
+  "author": "Dave & Jacob",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davebeyer/node-test/issues"
+  },
+  "homepage": "https://github.com/davebeyer/node-test#readme",
+  "dependencies": {
+    "@types/node": "^12.0.7",
+    "express": "^4.17.1",
+    "typescript": "^3.5.1"
+  }
+}
